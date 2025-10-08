@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contenedor {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.acciones {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.primario { background: #63e8f1; }
+.primario:hover { background: #46e0e5; }
+
+.exito { background: #085157; width: 100%; }
+.exito:hover { background: #059669; }
+
+.peligro { background: #44d5ef; width: 100%; }
+.peligro:hover { background: #26c1dc; }
+
+.aviso { background: #0bd2f5; width: 100%; }
+.aviso:hover { background: #0626d9; }
+
+.formularios {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.formulario {
+    background: #1e4975;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.formulario:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 2px solid #1a253a;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.formulario input:focus {
+    outline: none;
+    border-color: #0e0f70;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #0a1d44;
+}
+
+.autor {
+    color: #2e0909;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .formularios {
+        grid-template-columns: 1fr;
+    }
+}

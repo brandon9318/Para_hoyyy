@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h1 class="titulo">Gestión de Usuarios</h1>
+
+        <section class="acciones">
+            <a href="/obtenerUsuario" class="boton primario"> Ver lista de usuarios</a>
+        </section>
+
+        <section class="formularios">
+            <form action="/agregarUsuario" method="post" class="formulario">
+                <h2> Agregar Usuario</h2>
+                <input type="text" name="nombre" placeholder="Nombre de Usuario" required>
+                <button type="submit" class="boton exito">Agregar</button>
+            </form>
+
+            <form action="/borrarUsuario" method="post" class="formulario">
+                <h2> Borrar Usuario</h2>
+                <input type="text" name="id" placeholder="Nombre de Usuario" required>
+                <button type="submit" class="boton peligro">Borrar</button>
+            </form>
+
+            <form action="/editarUsuario" method="post" class="formulario">
+                <h2> Editar Usuario</h2>
+                <input type="text" name="nombre" placeholder="Nombre actual" required>
+                <input type="text" name="nuevoNombre" placeholder="Nuevo nombre" required>
+                <button type="submit" class="boton aviso">Editar</button>
+            </form>
+        </section>
+
+        <footer>
+            <p class="autor">PALACIOS FERNANDEZ EMILIANO 5IV9</p>
+        </footer>
+    </main>
+</body>
+</html>
